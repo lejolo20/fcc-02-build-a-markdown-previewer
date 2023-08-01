@@ -1,9 +1,11 @@
 import "./App.css";
-import { useState } from "react";
+import { React, useState } from "react";
 import Textarea from "./components/Textarea";
 import Footer from "./components/Footer";
 
 function App() {
+  
+
   return (
     <>
       <Textarea />
