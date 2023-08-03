@@ -8,12 +8,13 @@ const Textarea = () => {
   const [text, setText] = useState(initialText);
 
   return (
-    <>
+    <div className="app-container">
       <h3>Editor</h3>
       <textarea
         name="editor"
         id="editor"
         onChange={(e) => setText(e.target.value)}
+        rows="20"
       >
         {text}
       </textarea>
@@ -21,7 +22,7 @@ const Textarea = () => {
       <div id="preview">
         <ReactMarkdown>{text}</ReactMarkdown>
       </div>
-    </>
+    </div>
   );
 };
 
